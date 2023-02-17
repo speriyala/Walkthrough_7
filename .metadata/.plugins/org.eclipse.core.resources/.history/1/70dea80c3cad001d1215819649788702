@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="accountsFlow" doc:id="81836bf5-efe2-4ccf-b330-98d634c85a5b" >
+		<http:listener doc:name="GET /sfdc" doc:id="644a9ca0-7a95-4ef3-90e8-64ebc92186a2" config-ref="HTTP_Listener_config" path="/sfdc"/>
+	</flow>
+</mule>
